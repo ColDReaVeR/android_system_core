@@ -143,6 +143,7 @@ int lookup_keyword(const char *s)
     case 'u':
         if (!strcmp(s, "ser")) return K_user;
 	   if (!strcmp(s, "mount")) return K_umount;
+	if (!strcmp(s, "biattach")) return K_ubiattach;
         break;
     case 'w':
         if (!strcmp(s, "rite")) return K_write;
