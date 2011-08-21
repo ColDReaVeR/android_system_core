@@ -452,7 +452,7 @@ int do_ubiattach(int nargs, char **args)
         mtd_num = strtoul(source, 0, 0);
     }
 
-    if (ubi_attach("/dev/ubi_ctrl0", mtd_num, ubi_num)) {
+    if (ubi_attach("/dev/ubi_ctrl", mtd_num, ubi_num)) {
         return -1;
     }
 
